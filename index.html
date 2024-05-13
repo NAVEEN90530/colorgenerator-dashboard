@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="left-content">
+            <h1>Color Dashboard</h1>
+
+            <div class="inp">
+                <input type="radio" id="twoColors" name="colorOption" value="2" checked>
+                <label for="twoColors">Two Colors</label><br>
+                <input type="radio" id="threeColors" name="colorOption" value="3">
+                <label for="threeColors">Three Colors</label><br>
+                <input type="radio" id="fourColors" name="colorOption" value="4">
+                <label for="fourColors">Four Colors</label><br>
+                <input type="radio" id="fiveColors" name="colorOption" value="5">
+                <label for="fiveColors">Five Colors</label><br>
+            </div>
+
+            <button id="generateButton">Generate Colors</button>
+
+            <div id="colorBox"></div>
+        </div>
+
+        <div class="right-content">
+            <!-- Navigation bar -->
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#charts">Charts</a></li>
+                    <li><a href="#tables">Tables</a></li>
+                    <li><a href="#settings">Settings</a></li>
+                    <li><button id="btn">Sign In</button></li>
+                </ul>
+            </nav>
+
+            <!-- Main content area -->
+            <div class="content">
+                <!-- Home section -->
+                <section id="home">
+                    <h2>Home</h2>
+                    <p>Welcome to the dashboard! This is the home section.</p>
+                </section>
+
+                <!-- Charts section -->
+                <section id="charts">
+                    <h2>Charts</h2>
+                    <div class="chart-container">
+                        <canvas id="lineChart"></canvas>
+                    </div>
+                </section>
+
+                <!-- Tables section -->
+                <section id="tables">
+                    <h2>Tables</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Age</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>John Doe</td>
+                                <td>30</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Jane Smith</td>
+                                <td>25</td>
+                            </tr>
+                            <!-- Add more rows as needed -->
+                        </tbody>
+                    </table>
+                </section>
+
+                <!-- Settings section -->
+                <section id="settings">
+                    <h2>Settings</h2>
+                    <p>Customize your dashboard settings here.</p>
+                </section>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Include JavaScript libraries or custom scripts here -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

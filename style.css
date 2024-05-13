@@ -1,0 +1,197 @@
+.color-box {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    box-shadow: 2px 2px 2px  #999;
+}
+
+/* Input styles */
+label {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+input[type="number"] {
+    padding: 5px;
+    font-size: 16px;
+    width: 50px;
+    text-align: center;
+}
+
+/* Button styles */
+.left-content button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.left-content button:hover {
+    background-color: #0056b3;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+/* Navigation styles */
+nav {
+    padding: 15px 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Content styles */
+.content {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+
+table th,
+table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+/* Chart styles */
+.chart-container {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.generate-btn {
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.left-content {
+    flex: 0.2;
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    background-color: #333; 
+    color: #fff;
+}
+
+
+.right-content {
+    flex: 0.8;
+}
+
+.generate-btn {
+    background-color: #45a049;
+    margin-top: 5px;
+}
+
+.color1, .color2, .color3 , .color4 {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#color1value, #color2value, #color3value , #color4value {
+    padding: 20px;
+    background-color: black;
+    color: white;
+    opacity: 0;
+    cursor: pointer;
+    transition: opacity 0.3s; 
+}
+
+.color1:hover #color1value,
+.color2:hover #color2value,
+.color3:hover #color3value,
+.color4:hover #color4value {
+    opacity: 1;
+}
+
+#btn {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.color-output {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #333;
+    align-items: center;
+    gap: 20px;
+}
+
+textarea {
+    opacity: 0;
+}
